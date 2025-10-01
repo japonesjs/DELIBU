@@ -1,95 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeliBu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      margin-top: 20px;
-    }
-    .logo {
-      width: 200px;
-      height: auto;
-    }
-    h1 {
-      color: #333;
-    }
-    .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin: 40px;
-    }
-    .producto {
-      text-align: center;
-      background: #fff;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 220px;
-    }
-    .producto img {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-    }
-    .producto p {
-      margin-top: 10px;
-      font-weight: bold;
-      color: #555;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      background: #eee;
-    }
-    .qr {
-      margin-top: 10px;
-      width: 150px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliBu - Buñuelos Rellenos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf2;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #b94a00;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery-item h3 {
+            margin-top: 15px;
+            color: #b94a00;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.jpg" alt="Logo DeliBu" class="logo">
-    <h1>¡Más que un sabor, una experiencia!</h1>
-  </header>
+    <header>
+        <img src="img/logo.JPG" alt="Logo DeliBu">
+        <h1>¡Los mejores buñuelos rellenos!</h1>
+    </header>
 
-  <section class="productos">
-    <div class="producto">
-      <img src="arequipe.jpg" alt="Buñuelo relleno de arequipe">
-      <p>Buñuelo relleno de arequipe</p>
-    </div>
-    <div class="producto">
-      <img src="mora.jpg" alt="Buñuelo relleno de mora">
-      <p>Buñuelo relleno de mora</p>
-    </div>
-    <div class="producto">
-      <img src="chocolate.jpg" alt="Buñuelo relleno de chocolate">
-      <p>Buñuelo relleno de chocolate</p>
-    </div>
-    <!-- Puedes agregar más productos copiando este bloque -->
-    <!--
-    <div class="producto">
-      <img src="NOMBRE_IMAGEN.jpg" alt="Descripción del buñuelo">
-      <p>Texto que quieras</p>
-    </div>
-    -->
-  </section>
-
-  <footer>
-    <h2>Escanea nuestro QR y haz tu pedido</h2>
-    <img src="qr.png" alt="Código QR DeliBu" class="qr">
-    <p>¡Rápido, fácil y delicioso!</p>
-  </footer>
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="img/bunuelo-arequipe.jpg" alt="Buñuelo relleno de arequipe">
+                <h3>Buñuelo relleno de arequipe</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="img/bunuelo-mora.jpg" alt="Buñuelo relleno de mora">
+                <h3>Buñuelo relleno de mora</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="img/bunuelo-bocadillo.jpg" alt="Buñuelo relleno de bocadillo">
+                <h3>Buñuelo relleno de bocadillo</h3>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
