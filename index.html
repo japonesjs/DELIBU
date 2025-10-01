@@ -6,82 +6,90 @@
   <title>DeliBu</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #fffaf0;
-      color: #333;
       text-align: center;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
     }
-
     header {
-      background: #fff;
-      padding: 20px;
-      border-bottom: 2px solid #eee;
+      margin-top: 20px;
     }
-
-    header img {
-      max-width: 200px;
+    .logo {
+      width: 200px;
+      height: auto;
     }
-
     h1 {
-      margin-top: 10px;
-      font-size: 24px;
-      color: #b45309;
+      color: #333;
     }
-
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
-      padding: 40px;
+      margin: 40px;
     }
-
-    .menu-item {
+    .producto {
+      text-align: center;
       background: #fff;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 220px;
     }
-
-    .menu-item:hover {
-      transform: scale(1.05);
-    }
-
-    .menu-item img {
-      max-width: 100%;
+    .producto img {
+      width: 200px;
+      height: auto;
       border-radius: 10px;
     }
-
-    .menu-item p {
-      margin-top: 15px;
-      font-size: 18px;
+    .producto p {
+      margin-top: 10px;
       font-weight: bold;
-      color: #b45309;
+      color: #555;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #eee;
+    }
+    .qr {
+      margin-top: 10px;
+      width: 150px;
     }
   </style>
 </head>
 <body>
-
   <header>
-   <img src="logo.JPG" alt="Logo DeliBu">
-    <h1>¡Mas que un sabor una experiencia!</h1>
+    <img src="logo.jpg" alt="Logo DeliBu" class="logo">
+    <h1>¡Más que un sabor, una experiencia!</h1>
   </header>
 
-  <section class="menu">
-    <div class="menu-item">
-      <img src="https://i.ibb.co/vcd6kcn/bunelo-arequipe.jpg" alt="Buñuelo relleno de arequipe">
+  <section class="productos">
+    <div class="producto">
+      <img src="arequipe.jpg" alt="Buñuelo relleno de arequipe">
       <p>Buñuelo relleno de arequipe</p>
     </div>
-    <div class="menu-item">
-      <img src="https://i.ibb.co/dGY2WyD/bunelo-mora.jpg" alt="Buñuelo relleno de mora">
+    <div class="producto">
+      <img src="mora.jpg" alt="Buñuelo relleno de mora">
       <p>Buñuelo relleno de mora</p>
     </div>
-    <div class="menu-item">
-      <img src="https://i.ibb.co/MgnB1sJ/bunelo-bocadillo.jpg" alt="Buñuelo relleno de bocadillo">
-      <p>Buñuelo relleno de bocadillo</p>
+    <div class="producto">
+      <img src="chocolate.jpg" alt="Buñuelo relleno de chocolate">
+      <p>Buñuelo relleno de chocolate</p>
     </div>
+    <!-- Puedes agregar más productos copiando este bloque -->
+    <!--
+    <div class="producto">
+      <img src="NOMBRE_IMAGEN.jpg" alt="Descripción del buñuelo">
+      <p>Texto que quieras</p>
+    </div>
+    -->
   </section>
 
+  <footer>
+    <h2>Escanea nuestro QR y haz tu pedido</h2>
+    <img src="qr.png" alt="Código QR DeliBu" class="qr">
+    <p>¡Rápido, fácil y delicioso!</p>
+  </footer>
 </body>
 </html>
